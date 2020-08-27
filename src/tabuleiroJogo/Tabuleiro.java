@@ -12,12 +12,14 @@ public class Tabuleiro {
 		pecasJogo = new PecaJogo[quantLinhas][quantColunas];
 	}
 
-	public int getQuantColunas() {
-		return quantColunas;
+	
+
+	public int getQuantLinhas() {
+		return quantLinhas;
 	}
 
-	public void setQuantColunas(int quantColunas) {
-		this.quantColunas = quantColunas;
+	public int getQuantColunas() {
+		return quantColunas;
 	}
 
 	public PecaJogo[][] getPecasJogo() {
@@ -28,6 +30,12 @@ public class Tabuleiro {
 		this.pecasJogo = pecasJogo;
 	}
 	
+	public PecaJogo pecasJogo(int linha, int coluna) {
+			return pecasJogo[linha][coluna];
+	}
 	
+	public PecaJogo pecasJogo(Posicao posicaoPeca) {
+		return  pecasJogo[posicaoPeca.getLinha()][posicaoPeca.getColuna()];
+	}
 	
 }
