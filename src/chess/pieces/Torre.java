@@ -6,8 +6,8 @@ import chess.Color;
 
 public class Torre extends ChessPiece{
 
-	public Torre(Board tabuleiro, Color cor) {
-		super(tabuleiro, cor);
+	public Torre(Board board, Color color) {
+		super(board, color);
 	}
 	
 	@Override
